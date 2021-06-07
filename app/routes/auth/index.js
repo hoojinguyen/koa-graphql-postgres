@@ -56,9 +56,9 @@ module.exports = {
           resolve(user);
           ctx.state.user = user;
 
-          let res = { oke: true, message: "Authentication Success" };
-          if (!user) res = { oke: false, message: "Authentication failed" };
-          ctx.body = res;
+          // let res = { oke: true, message: "Authentication Success" };
+          // if (!user) res = { oke: false, message: "Authentication failed" };
+          // ctx.body = res;
         })(ctx);
       });
       await next();
